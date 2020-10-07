@@ -1,0 +1,131 @@
+
+.bloc_page {
+    width: 90%;
+    margin: auto;
+}
+
+/*police personnalisée pour l'ensemble de la page*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*en-tete*/
+
+.en_tete {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-en_tete ul {
+    display: flex;
+    list-style-type: none;
+}
+.nav-en_tete a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 0.7em;
+    padding-top: 27px;
+    color: gray;
+}
+.nav-en_tete a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+.inscription
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+h1 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+h3{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/*formulaire de recherche*/
+
+.search {
+    background-color: #F2F2F2;
+    display: flex;
+    width: fit-content;
+    border-radius: 15px;
+    height: 40px;
+}
+.fa-map-marker-alt {
+    padding: 10px 15px 10px 15px;
+}
+.btn {
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}
+#destination {
+    width: 200px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+    border: none;
+}
+
+/*filtre*/
+
+.filters p {
+    font-weight: bold;
+}
+.filters {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    width: fit-content;
+    height: 35px;
+    margin-left: 20px;
+}
+.filter:hover {
+    color: #0065FC;
+    border: 1px solid #DEEBFF;
+    box-shadow: 1px 1px 4px gray;
+}
+.fa-money-bill-wave ,
+.fa-child ,
+.fa-heart ,
+.fa-dog {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 11px;
+    margin-left: -2px;
+}
+.fa-child {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.filter_text {
+    padding: 0 20px 0 10px;
+}
+
+/*phrase d'information*/
+
+.phrase_info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+.fa-info-circle {
+    font-size: 1.2em;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 100%;
+    margin-right: 10px;
+}
