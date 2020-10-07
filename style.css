@@ -205,3 +205,69 @@ h2 {
     background-size: cover;
     background-position: center;
 }
+
+/*carte les plus populaires*/
+
+.populaires {
+    width: 30%;
+}
+.en-tete_populaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.en-tete_populaire , a {
+    width: 85%;
+    margin: auto;
+}
+.pop_link {
+    border: 5px solid white;
+    border-radius: 10px;
+    display: block;
+    width: 85%;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+.pop_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: absolute;
+    background: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 4px;
+    font-size: 0.6em;
+    color: black;
+    width: 55%;
+}
+.pop_info i {
+    font-size: 0.8em;
+    color: #0065FC;
+}
+.pop_star {
+    margin-bottom: 10px;
+}
+.soleil {
+    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: contain;
+}
+.coeur {
+    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: contain;
+}
+.bleu {
+    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.link:hover , .pop_link:hover {
+    box-shadow: none;
+    border: 5px solid #F2F2F2;
+}
+
