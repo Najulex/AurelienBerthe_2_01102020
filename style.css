@@ -129,3 +129,79 @@ h3{
     border-radius: 100%;
     margin-right: 10px;
 }
+
+/*carte hébergements à Marseille*/
+
+h2 {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#hebergements , .bloc_hebergements{
+    display: flex;
+    justify-content: space-between;
+}
+.marseille {
+    margin-right: 20px;
+    width: 60%;
+}
+.populaires , .marseille {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+}
+.link {
+    border: 5px solid white;
+    border-radius: 10px;
+    display: block;
+    width: 28%;
+    height: 150px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+.info {
+    position: absolute;
+    background: white;
+    border-radius: 0 0px 5px 5px;
+    padding-left: 5px;
+    bottom: 0;
+    width: 99%;
+    height: 40%;
+    line-height: 4px;
+    font-size: 0.6em;
+    color: black;
+}
+.info i {
+    font-size: 0.8em;
+    color: #0065FC;
+}
+.info h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.cannebieres {
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: contain;
+}
+.port {
+    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: contain;
+}
+.mouettes {
+    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: contain;
+}
+.mer {
+    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.panier {
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: contain;
+}
+.amina {
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
