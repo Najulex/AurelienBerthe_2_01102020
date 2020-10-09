@@ -457,7 +457,7 @@ footer a:hover {
 
 /* media queries*/
 
-@media only screen and (max-device-width : 1023px) {
+@media all and (max-device-width : 480px) {
     .bloc_page {
     width: 100%;
     margin: auto;
@@ -640,87 +640,135 @@ footer a:hover {
         padding-left: 20px;
     }
 }
-@media only screen and (min-device-width : 426px) and (max-device-width : 1023px) {
+@media all and (min-width : 426px) and (max-width : 1023px) {
+    
     .bloc_page {
-        width: 90%;
+        width: 100%;
     }
-    .inscription {
-        margin-right: 35px;
+    .nav {
+        font-size: 1.2em;
     }
     h1 {
-        text-align: center;
-    }
-    h2 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     h3 {
         font-size: 1.2em;
-        text-align: center;
     }
     .search {
+        margin: auto;
+        margin-bottom: 20px;
         width: 500px;
-    }
-    .btn {
-        font-size: 1em;
-        text-decoration: none;
-        padding: 10px 40px 10px 20px;
     }
     #destination {
         width: 400px;
-        font-size: 1.1em;
-        font-weight: bold;
+        font-size: 1.2em;
         text-align: center;
-    }
-    .filters {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 20px;
-        font-weight: normal;
-        font-size: 0.9em;
-    }
-    .filter_link {
-        margin-left: 10px;
-    }
-    .phrase_info {
-        justify-content: flex-end;
-        font-size: 1em;
     }
     #hébergements {
         flex-direction: column-reverse;
     }
-    .bloc_hebergements {
-        flex-direction: row;
+    .filter_text {
+        padding: 0 15px 0 10px
     }
-    .info {
-        align-items: center;
+    .phrase_info {
+        font-size: 0.8em;
+        justify-content: flex-end;
+    }
+    .populaires {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .en-tete_populaire {
+        width: 90%;
+    }
+    .pop_link{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .pop_info {
+        width: 30%;
         font-size: 0.8em;
     }
-    .info h4, .info p {
-        margin-right: 10px;
+    .soleil {
+        background-position: right;
+        width: 90%;
+    }
+    .info_soleil {
+        width: 40%;
+        font-size: 1em;
+    }
+    .coeur {
+        background-size: cover;
+        background-position: center;
+    }
+    .bleu {
+        background-size: auto;
+    }
+    .info_coeur_bleu {
+        width: 40%;
+    }
+    .populaires, .marseille {
+        padding: 0px;
+    }
+    .marseille {
+        width: 100%;
+        background: none;
+    }
+    .bloc_hebergements {
+        justify-content: space-around;
+    }
+    .info {
+        height: 60px;
+        font-size: 0.6em;
+    }
+    .carte_activités {
+        flex-wrap: wrap;
+    }
+    .activités_grand_format {
+        width: 45%;
+    }
+    .bloc_petit_format {
+        width: 45%;
+    }
+    .nav a:hover {
+        border-top: none;
+        color: #0065FC;
+    }
+    .activités_title, .hebergement_title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .activités_title {
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #F2F2F2;
     }
     .plus {
         font-size: 1.2em;
-        margin-left: 25px;
     }
-    .populaires {
-        border-radius: 15px;
+    .activités_grand_format, .bloc_petit_format {
+        margin: auto;
     }
-    .pop_info {
-        font-size: 1.2em;
+    .pomègues, .frioul, .notre_dame, .longchamp {
+        height: 140px;
     }
-    .link {
-        width: 30%;
+    .longchamp, .frioul {
+        margin-top: 20px;
     }
-    .activités_title {
-        padding-left: 40px;
-        background-color: #F2F2F2;
-        border-radius: 20px;
+    .calanques {
+        margin-top: 25px;
     }
-    #activités {
-        background-color: #F2F2F2;
-        border-radius: 20px;
+    .notre_dame {
+        margin-top: 12px;
+        background-position: center;
     }
-    footer {
-        flex-direction: row-reverse;
-        font-size: 0.8em;
+    .longchamp {
+        background-position: center;
     }
+    .longchamp:hover {
+        background-position: bottom;
+    }
+
+}
