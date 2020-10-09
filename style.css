@@ -17,23 +17,22 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.nav-en_tete ul {
+.nav ul {
     display: flex;
     list-style-type: none;
 }
-.nav-en_tete a {
+.nav a {
     text-decoration: none;
     margin-right: 20px;
     font-size: 0.7em;
     padding-top: 27px;
     color: gray;
 }
-.nav-en_tete a:hover {
+.nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-.inscription
-{
+.inscription a {
     color: #0065FC;
     font-weight: bold;
 }
@@ -64,7 +63,7 @@ h3{
     color: white;
     font-size: 1em;
     text-decoration: none;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 30px 10px 20px;
 }
 #destination {
     width: 200px;
@@ -81,6 +80,9 @@ h3{
     display: flex;
     align-items: center;
     font-weight: bold;
+}
+.filter_link {
+    display: flex;
 }
 .filter {
     display: flex;
@@ -166,7 +168,7 @@ h2 {
     height: 150px;
     position: relative;
     margin-bottom: 20px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 10px gray;
 }
 .info {
     position: absolute;
@@ -178,6 +180,8 @@ h2 {
     line-height: 2px;
     font-size: 0.5em;
     color: black;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .info i {
     font-size: 0.8em;
@@ -265,7 +269,7 @@ h2 {
     position: relative;
     margin: auto;
     margin-bottom: 20px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 4px gray;
 }
 .pop_info{
     display: flex;
@@ -281,6 +285,8 @@ h2 {
     font-size: 0.6em;
     color: black;
     width: 55%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .pop_info i {
     font-size: 0.8em;
@@ -334,7 +340,7 @@ h2 {
     width: 25%;
 }
 .activités_grand_format {
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 1px 1px 4px gray;
     margin-right: 20px;
 }
 .vieux {
@@ -374,7 +380,7 @@ h2 {
     display: block;
     height: 140px;
     position: relative;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 1px 1px 4px gray;
 }
 .pomègues {
     background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
@@ -417,7 +423,7 @@ h2 {
     -webkit-filter: grayscale(100%);
     background-position: top;
 }
-span {
+.activités_description {
     padding-left: 10px;
 }
 
@@ -448,3 +454,199 @@ footer a:hover {
     color: #0065FC;
     text-decoration: underline;
 }
+
+/* media queries*/
+/*pour smartphone*/
+
+@media only screen and (max-device-width : 425px) {
+    .bloc_page {
+    width: 100%;
+    margin: auto;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    .en_tete {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .nav {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .nav li {
+        width: 50%;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    nav ul {
+        padding-left: 0;
+        text-align: center;
+    }
+    .nav a {
+        padding-bottom: 20px;
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+    .nav a:hover {
+        border-top: none;
+    }
+    .nav li:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+    ul :nth-child(3) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom: none;
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        font-size: 1.2em;
+    }
+    ul :nth-child(3):hover {
+        border-bottom: none;
+        font-style: italic;
+    }
+    .search {
+        width: 350px;
+        margin: auto;
+    }
+    .btn {
+        font-size: 0.8em;
+        text-decoration: none;
+        width: 60px;
+        padding: 12px 30px 10px 15px;
+    }
+    #destination {
+        font-size: 0.9em;
+    }
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filter_link {
+        flex-wrap: wrap;
+    }
+    .filter {
+        margin: 0 10px 10px 0;
+    }
+    .filter_text {
+        padding: 0 10px 0 5px;
+    }
+    #hébergements , .bloc_hebergements{
+        flex-direction: column-reverse;
+    }
+    .populaires , .marseille , .hebergement_title {
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .marseille {
+        background-color: white;
+    }
+    .hebergement_title, .activités_title {
+        background-color: white;
+        padding: 20px 0 20px 30px;
+
+    }
+    .marseille {
+        width: 100%;
+    }
+    .populaires {
+        width: 100%;
+    }
+    .pop_link {
+        height: 150px;
+        border-radius: 20px;
+        border: 6px solid white;
+    }
+    .pop_info {
+        font-size: 1em;
+        border-radius: 0 10px 10px 0;
+    }
+    .link {
+        height: 200px;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 6px solid white;
+    }
+    .info {
+        height: 80px;
+        font-size: 0.8em;
+        border-radius: 0 0 10px 10px;
+    }
+    .plus {
+        font-size: 1em;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    .carte_activités {
+        display: flex;
+        flex-direction: column;
+    }
+    .calanques {
+        margin-left: 0px;
+    }
+    .activités_grand_format {
+        width: 85%;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .bloc_petit_format {
+        width: 85%;
+        margin: auto;
+        height: auto;
+    }
+    .activités_petit_format{
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .bannière {
+        border-radius: 0 0 20px 20px;
+        height: 40px;
+        padding-top: 20px;
+    }
+    .activités_description {
+        font-size: 1.4em;
+    }
+    .frioul, .longchamp {
+        margin-top: 0px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        width: 100%;
+        margin-left: 0;
+    }
+    footer h4 {
+        font-size: 1.4em;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 1em;
+    }
+    footer h4, footer p {
+        padding-left: 20px;
+    }
+
+
+}
+
+/* media queries*/
+/*pour tablette*/
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 1023px) {
+    /* Styles pour cette Media Queries */
+    }

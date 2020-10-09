@@ -18,13 +18,13 @@
             <!--en-tete-->
 
             <div class="en_tete">
-                <img src="images/logo/Reservia.svg" alt="logo du site Reservia" />
-                <nav class="nav-en_tete">
+                <img class="logo" src="images/logo/Reservia.svg" alt="logo du site Reservia" />
+                <nav class="nav">
                     <ul>
                         <li><a href="#hébergements">Hébergements</a></li>
                         <li><a href="#activités">Activités</a></li>
-                        <li>
-                            <a href="#"><span class="inscription">S'inscrire</span></a>
+                        <li class="inscription">
+                            <a href="#">S'inscrire</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,21 +50,23 @@
 
             <div class="filters">
                 <p>Filtres</p>
-                <div class="filter">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <p class="filter_text">Economique</p>
-                </div>
-                <div class="filter">
-                    <i class="fas fa-child"></i>
-                    <p class="filter_text">Familial</p>
-                </div>
-                <div class="filter">
-                    <i class="fas fa-heart"></i>
-                    <p class="filter_text">Romantique</p>
-                </div>
-                <div class="filter">
-                    <i class="fas fa-dog"></i>
-                    <p class="filter_text">Animaux autorisés</p>
+                <div class="filter_link">
+                    <div class="filter">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p class="filter_text">Economique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fas fa-child"></i>
+                        <p class="filter_text">Familial</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fas fa-heart"></i>
+                        <p class="filter_text">Romantique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fas fa-dog"></i>
+                        <p class="filter_text">Animaux autorisés</p>
+                    </div>
                 </div>
             </div>
 
@@ -245,28 +247,28 @@
         <!--Corps du site - partie activités-->
 
         <section id="activités">
-            <h2>Activités à Marseille</h2>
+            <h2 class="activités_title">Activités à Marseille</h2>
             <div class="carte_activités">
                 <a href="#" class="activités_grand_format vieux">
-                    <p class="bannière"><span>Vieux Port</span></p>
+                    <p class="bannière"><span class="activités_description">Vieux Port</span></p>
                 </a>
                 <div class="bloc_petit_format">
                     <a href="#" class="activités_petit_format pomègues">
-                        <p class="bannière"><span>Fort de Pomègues</span></p>
+                        <p class="bannière"><span class="activités_description">Fort de Pomègues</span></p>
                     </a>
                     <a href="#" class="activités_petit_format frioul">
-                        <p class="bannière"><span>Iles du Frioul</span></p>
+                        <p class="bannière"><span class="activités_description">Iles du Frioul</span></p>
                     </a>
                 </div>
                 <a href="#" class="activités_grand_format calanques">
-                    <p class="bannière"><span>Parc National des Calanques</span></p>
+                    <p class="bannière"><span class="activités_description">Parc National des Calanques</span></p>
                 </a>
                 <div class="bloc_petit_format">
                     <a href="#" class="activités_petit_format notre_dame">
-                        <p class="bannière"><span>Notre-Dame-de-la-Garde</span></p>
+                        <p class="bannière"><span class="activités_description">Notre-Dame-de-la-Garde</span></p>
                     </a>
                     <a href="#" class="activités_petit_format longchamp">
-                        <p class="bannière"><span>Parc Longchamp</span></p>
+                        <p class="bannière"><span class="activités_description">Parc Longchamp</span></p>
                     </a>
                 </div>
             </div>
