@@ -52,7 +52,7 @@ h3{
     display: flex;
     border-radius: 15px;
     height: 40px;
-    width: 25%;
+    width: 350px;
 }
 .fa-map-marker-alt {
     padding: 10px 15px 10px 15px;
@@ -193,19 +193,19 @@ h2 {
 }
 .cannebieres {
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 .cannebieres:hover {
     -webkit-filter: grayscale(100%);
-    background-size: cover;
+    background-size: contain;
 }
 .port {
     background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 .port:hover {
     -webkit-filter: grayscale(100%);
-    background-size: cover;
+    background-size: contain;
 }
 .mouettes {
     background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
@@ -226,12 +226,12 @@ h2 {
 }
 .panier {
     background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 .panier:hover {
     -webkit-filter: grayscale(100%);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 .amina {
     background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
@@ -297,7 +297,7 @@ h2 {
 }
 .soleil {
     background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 .soleil:hover {
     -webkit-filter: grayscale(100%);
@@ -456,9 +456,8 @@ footer a:hover {
 }
 
 /* media queries*/
-/*pour smartphone*/
 
-@media only screen and (max-device-width : 425px) {
+@media only screen and (max-device-width : 1023px) {
     .bloc_page {
     width: 100%;
     margin: auto;
@@ -567,7 +566,7 @@ footer a:hover {
         border: 6px solid white;
     }
     .pop_info {
-        font-size: 1em;
+        font-size: 0.8em;
         border-radius: 0 10px 10px 0;
     }
     .link {
@@ -640,13 +639,88 @@ footer a:hover {
     footer h4, footer p {
         padding-left: 20px;
     }
-
-
 }
-
-/* media queries*/
-/*pour tablette*/
-
 @media only screen and (min-device-width : 426px) and (max-device-width : 1023px) {
-    /* Styles pour cette Media Queries */
+    .bloc_page {
+        width: 90%;
+    }
+    .inscription {
+        margin-right: 35px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .search {
+        width: 500px;
+    }
+    .btn {
+        font-size: 1em;
+        text-decoration: none;
+        padding: 10px 40px 10px 20px;
+    }
+    #destination {
+        width: 400px;
+        font-size: 1.1em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .filters {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 0.9em;
+    }
+    .filter_link {
+        margin-left: 10px;
+    }
+    .phrase_info {
+        justify-content: flex-end;
+        font-size: 1em;
+    }
+    #hébergements {
+        flex-direction: column-reverse;
+    }
+    .bloc_hebergements {
+        flex-direction: row;
+    }
+    .info {
+        align-items: center;
+        font-size: 0.8em;
+    }
+    .info h4, .info p {
+        margin-right: 10px;
+    }
+    .plus {
+        font-size: 1.2em;
+        margin-left: 25px;
+    }
+    .populaires {
+        border-radius: 15px;
+    }
+    .pop_info {
+        font-size: 1.2em;
+    }
+    .link {
+        width: 30%;
+    }
+    .activités_title {
+        padding-left: 40px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+    #activités {
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+    footer {
+        flex-direction: row-reverse;
+        font-size: 0.8em;
     }
