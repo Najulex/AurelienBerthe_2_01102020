@@ -535,10 +535,7 @@ footer a:hover {
         padding: 0px;
         border-radius: 0px;
     }
-    .en-tete_populaire {
-        width: 100%;
-    }
-    .pop_link {
+    .pop_link, .en-tete_populaire {
         width: 85%;
     }
     .marseille {
