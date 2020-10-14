@@ -508,7 +508,7 @@ footer a:hover {
     .filters {
         flex-direction: column;
         align-items: flex-start;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .filter_link {
         flex-wrap: wrap;
@@ -523,7 +523,7 @@ footer a:hover {
         margin-top: 12px;
     }
     .phrase_info p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     #hébergements {
         margin-bottom: 0;
@@ -534,6 +534,9 @@ footer a:hover {
     .populaires , .marseille , .hebergement_title {
         padding: 0px;
         border-radius: 0px;
+    }
+    .hebergement_title {
+        padding-left: 25px;
     }
     .pop_link, .en-tete_populaire {
         width: 85%;
@@ -579,9 +582,11 @@ footer a:hover {
     }
     .plus {
         font-weight: bold;
+        padding-left: 20px;
     }
     .activités_title {
         padding-left: 30px;
+        padding-bottom: 20px;
     }
     .carte_activités {
         flex-direction: column;
