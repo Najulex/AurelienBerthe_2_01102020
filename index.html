@@ -19,7 +19,7 @@
 
             <div class="en_tete">
                 <img class="logo" src="images/logo/Reservia.svg" alt="logo du site Reservia" />
-                <nav class="nav">
+                <nav>
                     <ul>
                         <li><a href="#hébergements">Hébergements</a></li>
                         <li><a href="#activités">Activités</a></li>
@@ -29,7 +29,7 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="consigne">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h3>En plein centre ville ou en pleine nature</h3>
             </div>
@@ -39,9 +39,10 @@
             <form action="#.php" method="POST">
                 <p class="search">
                     <label for="destination"><i class="fas fa-map-marker-alt"></i></label>
-                    <input type="text" placeholder="Marseille, France" id="destination" />
+                    <input type="text" value="Marseille, France" id="destination" />
                     <a href="#" class="btn">
                         <span>Rechercher</span>
+                        <i class="fas fa-search"></i>
                     </a>
                 </p>
             </form>
@@ -49,7 +50,7 @@
             <!--Filtres-->
 
             <div class="filters">
-                <p>Filtres</p>
+                <p class="filters_title">Filtres</p>
                 <div class="filter_link">
                     <div class="filter">
                         <i class="fas fa-money-bill-wave"></i>
@@ -73,7 +74,7 @@
             <!--info-->
 
             <div class="phrase_info">
-                <i class="fas fa-info-circle"></i>
+                <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
@@ -188,56 +189,54 @@
                     <h2>Les plus populaires</h2>
                     <p><i class="fas fa-chart-line"></i></p>
                 </div>
-                <a href="#" class="pop_link soleil">
-                    <div>
-                        <div class="pop_info info_soleil">
-                            <div>
-                                <h4>Hôtel Le soleil du matin</h4>
-                                <p>Nuit à partir de 128€</p>
-                            </div>
-                            <div class="pop_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                <a href="#" class="pop_link">
+                    <div class="img_pop img_pop_soleil">
+                    </div>
+                    <div class="pop_info">
+                        <div>
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 128€</p>
+                        </div>
+                        <div class="pop_star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="pop_link coeur">
-                    <div>
-                        <div class="pop_info info_coeur_bleu">
-                            <div>
-                                <h4>Au coeur de l'eau</h4>
-                                <h4>Chambres d'hôtes</h4>
-                                <p>Nuit à partir de 71€</p>
-                            </div>
-                            <div class="pop_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i style="color: #deebff" class="fas fa-star"></i>
-                            </div>
+                <a href="#" class="pop_link">
+                    <div class="img_pop img_pop_coeur">
+                    </div>
+                    <div class="pop_info">
+                        <div>
+                        <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                        <p>Nuit à partir de 71€</p>
+                        </div>
+                        <div class="pop_star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i style="color: #deebff" class="fas fa-star"></i>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="pop_link bleu">
-                    <div>
-                        <div class="pop_info info_coeur_bleu">
-                            <div>
-                                <h4>Hôtel Tout bleu</h4>
-                                <h4>et Blanc</h4>
-                                <p>Nuit à partir de 68€</p>
-                            </div>
-                            <div class="pop_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i style="color: #deebff" class="fas fa-star"></i>
-                            </div>
+                <a href="#" class="pop_link pop_link_bleu">
+                    <div class="img_pop img_pop_bleu">
+                    </div>
+                    <div class="pop_info pop_info_bleu">
+                        <div>
+                        <h4>Hôtel Tout bleu et Blanc</h4>
+                        <p>Nuit à partir de 68€</p>
+                        </div>
+                        <div class="pop_star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i style="color: #deebff" class="fas fa-star"></i>
                         </div>
                     </div>
                 </a>
