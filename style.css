@@ -157,6 +157,7 @@ h2 {
 .bloc_hebergements{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .marseille {
     width: 64%;
